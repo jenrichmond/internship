@@ -1,0 +1,53 @@
+---
+title: "create content"
+description: |
+ How to create blog posts and articles for your site
+author:
+  - name: Jenny Richmond
+    url: 
+    affiliation: 
+    affiliation_url:
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+To create a new post, use the `create_post()` function. In the console, type...
+
+```
+
+create_post("whatever you want the title to be")
+
+```
+
+This function will open a new folder within the `_posts` folder and a new .Rmd template for you to write in. You should edit the authors (it will default to those used last), write a description for your post, and add your text. To add a picture, save it into the `img` folder and insert a chunk with the following code inside. 
+
+```
+
+knitr::include_graphics(here::here("img", "whatever.png"))
+
+```
+
+```{r}
+
+knitr::include_graphics(here::here("img", "whatever.png"))
+
+```
+
+
+
+Writing in RMarkdown is different to writing in Word. 
+
+The [RMarkdown reference guide](https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf?_ga=2.15167350.1148129883.1606704012-1288179797.1570929100) is helpful in learning how to create formatted text in R-Markdown. To preview what your formatted text will look like, use the "Knit" button on the top bar, or the keyboard shortcut *Shift-Command-K*. 
+
+
+
+
+
+
+
+
+

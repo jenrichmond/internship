@@ -1,5 +1,6 @@
 name: "internship"
-title: "blog"
+title: "internship blog"
+
 description: |
   blog
 output_dir: "_site"
@@ -8,5 +9,15 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "About"
-      href: about.html
+      menu:
+        - text: "distill"
+          href: about.html
+        - text: "customise"
+          href: customise.html
+        - text: "new content"
+          href: create_content.html
+    - text: "Project"
+      href: project.html
+    - text: "Coding"
+      href: coding.html
 output: distill::distill_article

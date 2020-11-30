@@ -1,0 +1,64 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this blog",
+      "description": "Some \"how to\" details about working with distill/RMarkdown",
+      "author": [],
+      "contents": "\nThis blog is created using a package called distill. It is an R-Markdown based platform specifically designed for science communication. The package website is a useful source of information about how to set up and maintain a distill site. You can see examples of other sites that have been created using distill here.\nHere are some tips for …\ncustomising your site\ncreating new content\n\n\n\n",
+      "last_modified": "2020-12-01T10:08:11+11:00"
+    },
+    {
+      "path": "coding.html",
+      "title": "coding",
+      "description": "a place for coding notes",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2020-12-01T10:08:12+11:00"
+    },
+    {
+      "path": "create_content.html",
+      "title": "create content",
+      "description": "How to create blog posts and articles for your site\n",
+      "author": [
+        {
+          "name": "Jenny Richmond",
+          "url": {}
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\nTo create a new post, use the create_post() function. In the console, type…\n\ncreate_post(\"whatever you want the title to be\")\n\nThis function will open a new folder within the _posts folder and a new .Rmd template for you to write in. You should edit the authors (it will default to those used last), write a description for your post, and add your text. To add a picture, save it into the img folder and insert a chunk with the following code inside.\n\nknitr::include_graphics(here::here(\"img\", \"whatever.png\"))\n\n\n\n\nWriting in RMarkdown is different to writing in Word.\nThe RMarkdown reference guide is helpful in learning how to create formatted text in R-Markdown. To preview what your formatted text will look like, use the “Knit” button on the top bar, or the keyboard shortcut Shift-Command-K.\n\n\n\n",
+      "last_modified": "2020-12-01T10:08:13+11:00"
+    },
+    {
+      "path": "customise.html",
+      "title": "customise",
+      "description": "Some tips for customising your distill site\n",
+      "author": [
+        {
+          "name": "Jenny Richmond",
+          "url": {}
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\nYou can customise the look and feel of your distill site pretty easily. See some examples of other sites made with distill here.\n1. Change the name of your site\nIn the top left corner, your site is currently called “internship blog”. You might want to change that to the name of your group. Open the _site.yml file and update the title.\nYou can also change the welcome message. Open the index.Rmd file and change the title.\n2. Change the colour scheme\n\n\n\n",
+      "last_modified": "2020-12-01T10:08:14+11:00"
+    },
+    {
+      "path": "index.html",
+      "title": "welcome to our blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2020-12-01T10:08:15+11:00"
+    },
+    {
+      "path": "project.html",
+      "title": "project",
+      "description": "a place for group project design thoughts",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2020-12-01T10:08:15+11:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

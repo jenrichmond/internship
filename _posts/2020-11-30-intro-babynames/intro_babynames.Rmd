@@ -1,0 +1,132 @@
+---
+title: "babynames post"
+description: |
+  Introduce yourselves and play with baby names data 
+author:
+  - name: Billie Eilish
+    url: https://example.com
+  - name: Taylor Swift
+    url: https://example.com
+  - name: Britney Spears
+    url: https://example.com
+date: 11-30-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introductions
+
+Insert a short paragraph here about each of the members of your group. You can edit the templates below. If you want italics use *one asterisk*. For bond, use **two asterisks**. You can get levels of heading with hash
+
+# BIG HEADING
+## SMALLER HEADING
+### EVEN SMALLER HEADING
+
+You can get bullet points using dash...
+
+- first important point
+- second point
+- and third... 
+
+
+
+### Billie Eilish
+
+My favourite food on campus is Guzmen & Gomez. I get to UNSW on the bus/train. When we are allowed to travel again, the first place I am going to go is Bali. 
+
+
+### Taylor Swift
+
+My favourite food on campus is Stockmarket. To get to campus, I ride my bike. When we are allowed to travel again, the first place I am going to go is Thailand. 
+
+
+### Britney Spears
+
+My favourite food on campus is Subway. I drive my car to get to UNSW campus. When we are allowed to travel again, the first place I am going to go is New Zealand. 
+
+
+***
+
+# data viz with ggplot
+
+
+### load packages 
+
+We can use the `library()` function to load the packages we need. The `tidyverse` package contains tons of useful functions for data wrangling and visualisation (including ggplot). The `ozbabynames` package contains data from birth records in Australia. 
+
+
+```{r}
+library(tidyverse)
+library(ozbabynames)
+
+```
+
+### read the babynames data
+
+```{r}
+ozbabynames <- ozbabynames
+
+glimpse(ozbabynames)
+
+```
+
+
+### define the names you want to compare
+
+```{r}
+author_names <- c("Billie", "Taylor", "Britney")
+
+```
+
+### whose name is most popular?? 
+
+```{r}
+
+ozbabynames %>%
+  filter(name %in% author_names) %>%
+  group_by(name, year) %>% 
+  summarise(count = sum(count)) %>%
+  ggplot(aes(x = year, 
+             y = count,
+             colour = name)) +
+  geom_line() +
+  theme_bw() +
+ facet_wrap(~name,
+             scales = "free_y") +
+  theme(legend.position = "none")
+```
+
+
+
+What does the `scales = "free y"` do? What happens if you delete it? Is the plot more meaningful with "free y" or without it?
+
+
+### Recreate the plot above with your names 
+
+```{r}
+your_names <- c("name1", "name2", "name3")
+```
+
+What do you need to change about the code below to make it plot your names?
+
+```{r}
+ozbabynames %>%
+  filter(name %in% author_names) %>%
+  group_by(name, year) %>% 
+  summarise(count = sum(count)) %>%
+  ggplot(aes(x = year, 
+             y = count,
+             colour = name)) +
+  geom_line() +
+  theme_bw() +
+ facet_wrap(~name,
+             scales = "free_y") +
+  theme(legend.position = "none")
+```
+
+Do you need `scales = "free_y"`?
