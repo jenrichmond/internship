@@ -23,7 +23,34 @@ In the top left corner, your site is currently called "internship blog". You mig
 
 You can also change the welcome message. Open the index.Rmd file and change the title. 
 
-# 2. Change the colour scheme
+# 2. Change the theme
+
+You can change the fonts and colour scheme by choosing a theme. I've imported several examples from other distill sites. Choose your favourite theme from the list below. Open your _site.yml
+
+1. piping.css
+
+* https://www.pipinghotdata.com/
+
+2. sleep.css
+
+* https://milesmcbain.xyz/
+
+
+3. models.css
+
+* https://www.tidymodels.org/
+
+
+4. mock.css
+
+* https://themockup.blog/
+
+5. tidy.css
+
+* https://www.tidymodels.org/
+
+
+
 
 
 
