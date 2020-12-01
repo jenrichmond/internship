@@ -1,6 +1,6 @@
 name: "internship"
 title: "internship blog"
-theme: 
+theme: tidy.css
 description: |
   blog
 output_dir: "_site"

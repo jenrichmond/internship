@@ -25,7 +25,7 @@ You can also change the welcome message. Open the index.Rmd file and change the 
 
 # 2. Change the theme
 
-You can change the fonts and colour scheme by choosing a theme. I've imported several examples from other distill sites. Choose your favourite theme from the list below. Open your _site.yml
+You can change the fonts and colour scheme by choosing a theme. I've imported several examples from other distill sites. Choose your favourite theme from the list below. 
 
 1. piping.css
 
@@ -48,6 +48,11 @@ You can change the fonts and colour scheme by choosing a theme. I've imported se
 5. tidy.css
 
 * https://www.tidymodels.org/
+
+
+To apply the theme, open your _site.yml and insert the name of the theme where it says theme: 
+
+
 
 
 
