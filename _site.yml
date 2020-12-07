@@ -1,6 +1,6 @@
 name: "internship"
 title: "internship blog"
-theme: ijeamaka.css
+theme: tidy.css
 description: |
   blog
 output_dir: "_site"
