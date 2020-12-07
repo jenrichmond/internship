@@ -1,6 +1,6 @@
 name: "internship"
 title: "internship blog"
-theme: tidy.css
+theme: /theme_css/tidy.css
 description: |
   blog
 output_dir: "_site"
@@ -8,8 +8,10 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
+    - text: "How to"
+      href: howto.html
+    - text: "Blog"
+      href: blog_posts.html 
     - text: "Project"
       href: project.html
     - text: "Coding"

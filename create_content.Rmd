@@ -39,9 +39,7 @@ knitr::include_graphics(here::here("img", "whatever.png"))
 
 
 
-Writing in RMarkdown is different to writing in Word. 
 
-The [RMarkdown reference guide](https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf?_ga=2.15167350.1148129883.1606704012-1288179797.1570929100) is helpful in learning how to create formatted text in R-Markdown. To preview what your formatted text will look like, use the "Knit" button on the top bar, or the keyboard shortcut *Shift-Command-K*. 
 
 
 

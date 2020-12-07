@@ -49,6 +49,10 @@ You can change the fonts and colour scheme by choosing a theme. I've imported se
 
 * https://www.tidymodels.org/
 
+6. ijemaka.css
+
+* https://ijeamaka-anyene.netlify.app
+
 
 To apply the theme, open your _site.yml and insert the name of the theme where it says theme: 
 

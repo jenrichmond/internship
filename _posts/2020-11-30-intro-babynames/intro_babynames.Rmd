@@ -1,13 +1,13 @@
 ---
 title: "babynames post"
 description: |
-  Introduce yourselves and play with baby names data 
+  play with baby names data 
 author:
   - name: Billie Eilish
     url: https://example.com
   - name: Taylor Swift
     url: https://example.com
-  - name: Britney Spears
+  - name: Lady Gaga
     url: https://example.com
 date: 11-30-2020
 output:
@@ -19,38 +19,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Introductions
-
-Insert a short paragraph here about each of the members of your group. You can edit the templates below. If you want italics use *one asterisk*. For bond, use **two asterisks**. You can get levels of heading with hash
-
-# BIG HEADING
-## SMALLER HEADING
-### EVEN SMALLER HEADING
-
-You can get bullet points using dash...
-
-- first important point
-- second point
-- and third... 
-
-
-
-### Billie Eilish
-
-My favourite food on campus is Guzmen & Gomez. I get to UNSW on the bus/train. When we are allowed to travel again, the first place I am going to go is Bali. 
-
-
-### Taylor Swift
-
-My favourite food on campus is Stockmarket. To get to campus, I ride my bike. When we are allowed to travel again, the first place I am going to go is Thailand. 
-
-
-### Britney Spears
-
-My favourite food on campus is Subway. I drive my car to get to UNSW campus. When we are allowed to travel again, the first place I am going to go is New Zealand. 
-
-
-***
 
 # data viz with ggplot
 
@@ -78,8 +46,10 @@ glimpse(ozbabynames)
 
 ### define the names you want to compare
 
+btw Lady Gaga's real name is Stefani
+
 ```{r}
-author_names <- c("Billie", "Taylor", "Britney")
+artist_names <- c("Billie", "Taylor", "Stefani")
 
 ```
 
@@ -88,7 +58,7 @@ author_names <- c("Billie", "Taylor", "Britney")
 ```{r}
 
 ozbabynames %>%
-  filter(name %in% author_names) %>%
+  filter(name %in% artist_names) %>%
   group_by(name, year) %>% 
   summarise(count = sum(count)) %>%
   ggplot(aes(x = year, 
@@ -116,7 +86,7 @@ What do you need to change about the code below to make it plot your names?
 
 ```{r}
 ozbabynames %>%
-  filter(name %in% author_names) %>%
+  filter(name %in% artist_names) %>%
   group_by(name, year) %>% 
   summarise(count = sum(count)) %>%
   ggplot(aes(x = year, 
