@@ -19,9 +19,9 @@ You can customise the look and feel of your distill site pretty easily. See some
 
 # 1. Change the name of your site
 
-In the top left corner, your site is currently called "internship blog". You might want to change that to the name of your group. Open the _site.yml file and update the title. 
+In the top left corner, your site is currently called "internship blog". You might want to change that to the name of your group. Open the **_site.yml** file and update the title. 
 
-You can also change the welcome message. Open the index.Rmd file and change the title. 
+You can also change the welcome message. Open the **index.Rmd ** file and change the title. 
 
 # 2. Change the theme
 
@@ -58,8 +58,12 @@ You can change the fonts and colour scheme by choosing a theme. I've imported se
 * https://lisalendway.netlify.app/posts/2020-12-09-buildingdistill/
 
 
-To apply the theme, open your _site.yml and insert the name of the theme where it says theme: 
+To apply the theme, open your **_site.yml** and insert the name of the theme where it says theme: 
 
+
+3. Change the layout of the navigation bar
+
+In the template, the top bar has links for 
 
 
 

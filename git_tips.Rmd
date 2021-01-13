@@ -1,0 +1,50 @@
+---
+title: "avoiding git drama"
+description: |
+  A new article created using the Distill format.
+author:
+  - name: Jenny Richmond
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Git tips for experts
+
+### Interacting with git in the Terminal
+
+In this course, we are using github to collaborate on code and writing projects. Github is really good at version control, but there are some tricks that you can employ to avoiding creating conflicts between the files that you and your collaborators are working on. 
+
+When you are working on a repo with someone else, it is possible that your collaborator has pushed their changes to your repo since the last time your were working.  Whenever you sit down to work on your project/site, it is good practice to "pull" before you "push".
+
+### in the terminal
+
+> git pull
+
+### via the git tab
+
+This pulls the latest version of the repo from git onto your local machine and makes it much less likely that you will create merge conflicts (aka clashes with your collaborators)
+
+When you have made some changes and want to push those changes to git, just knit your documents and then use these 3 commands in the TERMINAL to push the changes to git. 
+
+
+> git add . 
+
+This says hey git, I want to add some stuff, in fact all things that have changed (aka .)
+
+> git commit -m "a message that makes sense"
+
+This commits the changes and tags them with a message. 
+
+> git push
+
+
+
+
+This pulls the latest version of the repo from git onto your local machine and makes it much less likely that you will create merge conflicts (aka clashes with your collaborators)
+
+
+Jenny Bryan who works for R-Studio has written a great site called [happygitwithr](www.happygitwithr.com) which has lots of good tips and tricks if you are looking for more. 

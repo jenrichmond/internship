@@ -2355,17 +2355,38 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </div>
 
 <div class="d-article">
+<h1 id="blog-posts">Blog posts</h1>
+<p>There are a couple of blog posts in the template that you can edit to get started with your blog.</p>
+<ol type="1">
+<li>intro_babynames.Rmd</li>
+</ol>
+<ul>
+<li>in the _posts/2020-11-30-intro-babynames folder, you will find an Rmd file called intro_babynames.Rmd. It is set up to plot the popularity of some famous musicians names, but you can customise the code to make it plot your names. Don’t forget to update the author details in the top “yaml” section of the post too.</li>
+</ul>
+<ol start="2" type="1">
+<li>whatever.Rmd</li>
+</ol>
+<ul>
+<li>this is a placeholder for your first real post. You can use it, or follow the instructions below to create a post from scratch.</li>
+</ul>
 <p>To create a new post, use the <code>create_post()</code> function. In the console, type…</p>
 <pre><code>
 create_post(&quot;whatever you want the title to be&quot;)
 </code></pre>
 <p>This function will open a new folder within the <code>_posts</code> folder and a new .Rmd template for you to write in. You should edit the authors (it will default to those used last), write a description for your post, and add your text. To add a picture, save it into the <code>img</code> folder and insert a chunk with the following code inside.</p>
 <pre><code>
-knitr::include_graphics(here::here(&quot;img&quot;, &quot;whatever.png&quot;))
+knitr::include_graphics(here::here(&quot;img&quot;, &quot;nameofyourimage.png&quot;))
 </code></pre>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/whatever.png" width="1280" /></p>
 </div>
+<h1 id="articles">Articles</h1>
+<p>You can make other pages/articles appear in your site too. The template includes the following “articles”, which are all editable by you.</p>
+<ol type="1">
+<li><p>coding.Rmd This would be a good file to edit to keep notes on what you are learning in coding sessions.</p></li>
+<li><p>project.Rmd</p></li>
+</ol>
+<p>This would be a good file to edit as you make progress on your group project.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

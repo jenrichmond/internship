@@ -5,7 +5,7 @@
       "title": "welcome to our blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-13T21:19:18+11:00"
+      "last_modified": "2021-01-13T21:51:01+11:00"
     },
     {
       "path": "coding.html",
@@ -13,7 +13,7 @@
       "description": "a place for coding notes",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-13T21:19:19+11:00"
+      "last_modified": "2021-01-13T21:51:03+11:00"
     },
     {
       "path": "create_content.html",
@@ -26,8 +26,8 @@
         }
       ],
       "date": "`r Sys.Date()`",
-      "contents": "\nTo create a new post, use the create_post() function. In the console, type…\n\ncreate_post(\"whatever you want the title to be\")\n\nThis function will open a new folder within the _posts folder and a new .Rmd template for you to write in. You should edit the authors (it will default to those used last), write a description for your post, and add your text. To add a picture, save it into the img folder and insert a chunk with the following code inside.\n\nknitr::include_graphics(here::here(\"img\", \"whatever.png\"))\n\n\n\n\n\n\n\n",
-      "last_modified": "2021-01-13T21:19:20+11:00"
+      "contents": "\nBlog posts\nThere are a couple of blog posts in the template that you can edit to get started with your blog.\nintro_babynames.Rmd\nin the _posts/2020-11-30-intro-babynames folder, you will find an Rmd file called intro_babynames.Rmd. It is set up to plot the popularity of some famous musicians names, but you can customise the code to make it plot your names. Don’t forget to update the author details in the top “yaml” section of the post too.\nwhatever.Rmd\nthis is a placeholder for your first real post. You can use it, or follow the instructions below to create a post from scratch.\nTo create a new post, use the create_post() function. In the console, type…\n\ncreate_post(\"whatever you want the title to be\")\n\nThis function will open a new folder within the _posts folder and a new .Rmd template for you to write in. You should edit the authors (it will default to those used last), write a description for your post, and add your text. To add a picture, save it into the img folder and insert a chunk with the following code inside.\n\nknitr::include_graphics(here::here(\"img\", \"nameofyourimage.png\"))\n\n\n\n\nArticles\nYou can make other pages/articles appear in your site too. The template includes the following “articles”, which are all editable by you.\ncoding.Rmd This would be a good file to edit to keep notes on what you are learning in coding sessions.\nproject.Rmd\nThis would be a good file to edit as you make progress on your group project.\n\n\n\n",
+      "last_modified": "2021-01-13T21:51:05+11:00"
     },
     {
       "path": "customise.html",
@@ -40,8 +40,8 @@
         }
       ],
       "date": "`r Sys.Date()`",
-      "contents": "\nYou can customise the look and feel of your distill site pretty easily. See some examples of other sites made with distill here.\n1. Change the name of your site\nIn the top left corner, your site is currently called “internship blog”. You might want to change that to the name of your group. Open the _site.yml file and update the title.\nYou can also change the welcome message. Open the index.Rmd file and change the title.\n2. Change the theme\nYou can change the fonts and colour scheme by choosing a theme. I’ve imported several examples from other distill sites. Choose your favourite theme from the list below.\npiping.css\nhttps://www.pipinghotdata.com/\nsleep.css\nhttps://milesmcbain.xyz/\nmodels.css\nhttps://www.tidymodels.org/\nmock.css\nhttps://themockup.blog/\ntidy.css\nhttps://www.tidymodels.org/\nijemaka.css\nhttps://ijeamaka-anyene.netlify.app\nlendaway.css\nhttps://lisalendway.netlify.app/posts/2020-12-09-buildingdistill/\nTo apply the theme, open your _site.yml and insert the name of the theme where it says theme:\n\n\n\n",
-      "last_modified": "2021-01-13T21:19:22+11:00"
+      "contents": "\nYou can customise the look and feel of your distill site pretty easily. See some examples of other sites made with distill here.\n1. Change the name of your site\nIn the top left corner, your site is currently called “internship blog”. You might want to change that to the name of your group. Open the **_site.yml** file and update the title.\nYou can also change the welcome message. Open the index.Rmd  file and change the title.\n2. Change the theme\nYou can change the fonts and colour scheme by choosing a theme. I’ve imported several examples from other distill sites. Choose your favourite theme from the list below.\npiping.css\nhttps://www.pipinghotdata.com/\nsleep.css\nhttps://milesmcbain.xyz/\nmodels.css\nhttps://www.tidymodels.org/\nmock.css\nhttps://themockup.blog/\ntidy.css\nhttps://www.tidymodels.org/\nijemaka.css\nhttps://ijeamaka-anyene.netlify.app\nlendaway.css\nhttps://lisalendway.netlify.app/posts/2020-12-09-buildingdistill/\nTo apply the theme, open your **_site.yml** and insert the name of the theme where it says theme:\nChange the layout of the navigation bar\nIn the template, the top bar has links for\n\n\n\n",
+      "last_modified": "2021-01-13T21:51:07+11:00"
     },
     {
       "path": "howto.html",
@@ -49,14 +49,14 @@
       "description": "Some \"how to\" details about working with distill/RMarkdown",
       "author": [],
       "contents": "\nThis blog is created using a package called distill. It is an R-Markdown based platform specifically designed for science communication. The package website is a useful source of information about how to set up and maintain a distill site. You can see examples of other sites that have been created using distill here.\nHere are some tips for …\nworking in RMarkdown\ncustomising your site\ncreating new content\n\n\n\n",
-      "last_modified": "2021-01-13T21:19:23+11:00"
+      "last_modified": "2021-01-13T21:51:08+11:00"
     },
     {
       "path": "index.html",
       "title": "Hey there!",
       "author": [],
       "contents": "\n\n\n\nAbout us\nThe index.Rmd file contains your home page. Update the profile picture by taking a selfie of your team and replacing the avatar.jpg file with your own.\nInsert a short paragraph here about each of the members of your group.\nBillie Eilish\nMy favourite food on campus is Guzmen & Gomez. I get to UNSW on the bus/train. When we are allowed to travel again, the first place I am going to go is Bali.\nTaylor Swift\nMy favourite food on campus is Stockmarket. To get to campus, I ride my bike. When we are allowed to travel again, the first place I am going to go is Thailand.\nLady Gaga\nMy favourite food on campus is Subway. I drive my car to get to UNSW campus. When we are allowed to travel again, the first place I am going to go is New Zealand.\n\n\n\n",
-      "last_modified": "2021-01-13T21:19:24+11:00"
+      "last_modified": "2021-01-13T21:51:10+11:00"
     },
     {
       "path": "markdown.html",
@@ -69,16 +69,16 @@
         }
       ],
       "date": "`r Sys.Date()`",
-      "contents": "\nWriting in RMarkdown is different to writing in Word. What you see is not quite what you get. To preview what your formatted text will look like, use the “Knit” button on the top bar, or the keyboard shortcut Shift-Command-K.\n1. Italics and Bold\nIf you want italics or bold use asterisks.\nRaw Rmd\n*one asterisk* \n\n**two asterisks**\n\nKnitted Rmd\none asterisk\ntwo asterisks\n2. Levels of heading\nYou can get levels of heading with hash.\nRaw Rmd\n# BIG HEADING\n## Smaller Heading\n### even smaller heading\n\nKnitted Rmd\nBIG HEADING\nSMALLER HEADING\nEVEN SMALLER HEADING\n3. Bullets\nYou can get bullet points using dash…\nRaw Rmd\n- first important point\n- second point\n- and third... \n\nKnitted Rmd\nfirst important point\nsecond point\nand third…\n4. Code Chunks\nYou can insert code “chunks” by using the shortcut, Option-Command-I or choosing Insert R from the top menu bar.\nThe power of RMarkdown comes from being able to intersperse code chunks, output, and explanation in the same document.\nthis is a code chunk\n\n\nprint(\"hello world\")\n\n\n[1] \"hello world\"\n\n5. Images\nSave your image file in the img folder and tell R where to find it using the include_graphics() and here::here() functions\n\n\nknitr::include_graphics(here::here(\"img\", \"band.jpg\"))\n\n\n\n\nHelp?\nThe RMarkdown reference guide is helpful in learning how to create formatted text in R-Markdown.\n\n\n\n",
-      "last_modified": "2021-01-13T21:36:52+11:00"
+      "contents": "\nWriting in RMarkdown is different to writing in Word. What you see is not quite what you get. To preview what your formatted text will look like, use the “Knit” button on the top bar, or the keyboard shortcut Shift-Command-K.\n1. Italics and Bold\nIf you want italics or bold use asterisks.\nRaw Rmd\n*one asterisk* \n\n**two asterisks**\n\nKnitted Rmd\none asterisk\ntwo asterisks\n2. Levels of heading\nYou can get levels of heading with hash.\nRaw Rmd\n# BIG HEADING\n## Smaller Heading\n### even smaller heading\n\nKnitted Rmd\nBIG HEADING\nSMALLER HEADING\nEVEN SMALLER HEADING\n3. Bullets\nYou can get bullet points using dash…\nRaw Rmd\n- first important point\n- second point\n- and third... \n\nKnitted Rmd\nfirst important point\nsecond point\nand third…\n4. Code Chunks\nYou can insert code “chunks” by using the shortcut, Option-Command-I or choosing Insert R from the top menu bar.\nThe power of RMarkdown comes from being able to intersperse code chunks, output, and explanation in the same document.\nthis is a code chunk\n\n\nprint(\"hello world\")\n\n\n[1] \"hello world\"\n\n5. Images\nSave your image file in the img folder and tell R where to find it using the include_graphics() and here::here() functions\n\n\nknitr::include_graphics(here::here(\"img\", \"band.jpg\"))\n\n\n\n\nNeed help?\nThe RMarkdown reference guide is helpful in learning how to create formatted text in R-Markdown.\n\n\n\n",
+      "last_modified": "2021-01-13T21:51:13+11:00"
     },
     {
       "path": "project.html",
       "title": "project",
       "description": "a place for group project design thoughts",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-01-13T21:19:27+11:00"
+      "contents": "\nProject Goals\nInsert some text here about the paper you are trying to reproduce and what your goals are\n\n\n\n",
+      "last_modified": "2021-01-13T21:51:15+11:00"
     }
   ],
   "collections": ["posts/posts.json"]

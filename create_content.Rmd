@@ -15,6 +15,16 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+# Blog posts
+
+There are a couple of blog posts in the template that you can edit to get started with your blog. 
+
+1. intro_babynames.Rmd
+- in the _posts/2020-11-30-intro-babynames folder, you will find an Rmd file called intro_babynames.Rmd. It is set up to plot the popularity of some famous musicians names, but you can customise the code to make it plot your names. Don't forget to update the author details in the top "yaml" section of the post too. 
+
+2. whatever.Rmd
+- this is a placeholder for your first real post. You can use it, or follow the instructions below to create a post from scratch. 
+
 To create a new post, use the `create_post()` function. In the console, type...
 
 ```
@@ -27,7 +37,7 @@ This function will open a new folder within the `_posts` folder and a new .Rmd t
 
 ```
 
-knitr::include_graphics(here::here("img", "whatever.png"))
+knitr::include_graphics(here::here("img", "nameofyourimage.png"))
 
 ```
 
@@ -39,13 +49,16 @@ knitr::include_graphics(here::here("img", "whatever.png"))
 
 
 
+# Articles
 
+You can make other pages/articles appear in your site too. The template includes the following "articles", which are all editable by you. 
 
+1. coding.Rmd
+This would be a good file to edit to keep notes on what you are learning in coding sessions. 
 
+2. project.Rmd
 
-
-
-
+This would be a good file to edit as you make progress on your group project. 
 
 
 
