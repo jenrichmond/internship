@@ -53,6 +53,10 @@ You can change the fonts and colour scheme by choosing a theme. I've imported se
 
 * https://ijeamaka-anyene.netlify.app
 
+7. lendaway.css
+
+* https://lisalendway.netlify.app/posts/2020-12-09-buildingdistill/
+
 
 To apply the theme, open your _site.yml and insert the name of the theme where it says theme: 
 
