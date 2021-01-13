@@ -16,37 +16,76 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### Interacting with git in the Terminal
 
-In this course, we are using github to collaborate on code and writing projects. Github is really good at version control, but there are some tricks that you can employ to avoiding creating conflicts between the files that you and your collaborators are working on. 
+In this course, we are using github to collaborate on code and writing. Github is really good at version control, but there are some tricks that you can use to avoiding creating conflicts between the files that you and your collaborators are working on. 
 
-When you are working on a repo with someone else, it is possible that your collaborator has pushed their changes to your repo since the last time your were working.  Whenever you sit down to work on your project/site, it is good practice to "pull" before you "push".
+As you are learning git, you might like to use the git tab within RStudio (Option A), but as you become more familiar with the process you might find it faster to type commands in the terminal (Option B).
 
-### option 1 in the terminal
+```{r}
+knitr::include_graphics(here::here("img", "options.png"))
+```
+
+# Option A using the git tab
+
+
+## 1. git pull
+
+When you are working on a repo with someone else, it is possible that your collaborator has pushed their changes to your repo since the last time you were working.  Whenever you sit down to work on your project/site, it is good practice to "pull" before you "push".
+
+### option 1 via the git tab
+
+```{r}
+knitr::include_graphics(here::here("img", "gitpull.png"))
+```
+
+
+It is a good idea to use git pull before you think about pushing new content, because by getting the latest version of the repo from git onto your local machine you are much less likely to create merge conflicts (aka clashes with your collaborators).
+
+
+## git add - commit - push
+
+When you have made some changes and want to push those changes to git, just knit your documents and then tell github that you have some content to add.  
+
+First press the commit button. 
+
+```{r}
+knitr::include_graphics(here::here("img", "button.png"))
+```
+
+In the popup window...
+
+1. add: check the box next to each of the files you are ready to commit. This "stages" the files ready for the commit. 
+2. commit: on the right side of a the popup window, write a message explaining to your collaborators (or your future self) what changes have been made in this commit and click the commit button. Close out the popup box. 
+3. push: press the "up" button to push your changes to github
+
+
+```{r}
+knitr::include_graphics(here::here("img", "add commit push.png"))
+```
+
+
+
+# Option B using the terminal
+
+You can complete the steps above by typing commands into the terminal. 
+
+First, pull the  most up-to-date version of your project from git
 
 > git pull
 
-### option 2 via the git tab
+Then let github know which files you want to add. 
 
-git pull pulls the latest version of the repo from git onto your local machine and makes it much less likely that you will create merge conflicts (aka clashes with your collaborators)
-
-When you have made some changes and want to push those changes to git, just knit your documents and then use these 3 commands in the TERMINAL to push the changes to git. 
-
-### option 1 in the terminal
 > git add . 
 
 This says hey git, I want to add some stuff, in fact all things that have changed (aka .) This is the same as "staging" all the files that have changed. 
 
-### option 2 in the git tab
+Commit your files with a message that lets your collaborators (or your future self) know what has changed
 
 > git commit -m "a message that makes sense"
 
-This commits the changes and tags them with a message. 
+And finally, push your changes to github
 
 > git push
 
-
-
-
-This pulls the latest version of the repo from git onto your local machine and makes it much less likely that you will create merge conflicts (aka clashes with your collaborators)
-
+# Need help?
 
 Jenny Bryan who works for R-Studio has written a great site called [happygitwithr](www.happygitwithr.com) which has lots of good tips and tricks if you are looking for more. 

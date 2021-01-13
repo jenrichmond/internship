@@ -44,6 +44,20 @@
       "last_modified": "2021-01-13T21:51:07+11:00"
     },
     {
+      "path": "git_tips.html",
+      "title": "avoiding git drama",
+      "description": "A new article created using the Distill format.\n",
+      "author": [
+        {
+          "name": "Jenny Richmond",
+          "url": {}
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\nGit tips for experts\nInteracting with git in the Terminal\nIn this course, we are using github to collaborate on code and writing. Github is really good at version control, but there are some tricks that you can use to avoiding creating conflicts between the files that you and your collaborators are working on.\nAs you are learning git, you might like to use the git tab within RStudio (Option A), but as you become more familiar with the process you might find it faster to type commands in the terminal (Option B).\n\n\n\nOption A using the git tab\n1. git pull\nWhen you are working on a repo with someone else, it is possible that your collaborator has pushed their changes to your repo since the last time you were working. Whenever you sit down to work on your project/site, it is good practice to “pull” before you “push”.\noption 1 via the git tab\n\n\n\nIt is a good idea to use git pull before you think about pushing new content, because by getting the latest version of the repo from git onto your local machine you are much less likely to create merge conflicts (aka clashes with your collaborators).\ngit add - commit - push\nWhen you have made some changes and want to push those changes to git, just knit your documents and then tell github that you have some content to add.\nFirst press the commit button.\n\n\n\nIn the popup window…\nadd: check the box next to each of the files you are ready to commit. This “stages” the files ready for the commit.\ncommit: on the right side of a the popup window, write a message explaining to your collaborators (or your future self) what changes have been made in this commit and click the commit button. Close out the popup box.\npush: press the “up” button to push your changes to github\n\n\n\nOption B using the terminal\nYou can complete the steps above by typing commands into the terminal.\nFirst, pull the most up-to-date version of your project from git\n\ngit pull\n\nThen let github know which files you want to add.\n\ngit add .\n\nThis says hey git, I want to add some stuff, in fact all things that have changed (aka .) This is the same as “staging” all the files that have changed.\nCommit your files with a message that lets your collaborators (or your future self) know what has changed\n\ngit commit -m “a message that makes sense”\n\nAnd finally, push your changes to github\n\ngit push\n\nNeed help?\nJenny Bryan who works for R-Studio has written a great site called happygitwithr which has lots of good tips and tricks if you are looking for more.\n\n\n\n",
+      "last_modified": "2021-01-14T09:20:56+11:00"
+    },
+    {
       "path": "howto.html",
       "title": "How to...",
       "description": "Some \"how to\" details about working with distill/RMarkdown",
