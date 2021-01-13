@@ -87,7 +87,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <!--radix_placeholder_meta_tags-->
   <title>internship blog: avoiding git drama</title>
 
-  <meta property="description" itemprop="description" content="A new article created using the Distill format."/>
+  <meta property="description" itemprop="description" content="how to collaborate via git and github"/>
 
 
   <!--  https://schema.org/Article -->
@@ -98,20 +98,20 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="internship blog: avoiding git drama"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="A new article created using the Distill format."/>
+  <meta property="og:description" content="how to collaborate via git and github"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="internship blog"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="internship blog: avoiding git drama"/>
-  <meta property="twitter:description" content="A new article created using the Distill format."/>
+  <meta property="twitter:description" content="how to collaborate via git and github"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["avoiding git drama"]},{"type":"character","attributes":{},"value":["A new article created using the Distill format.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Jenny Richmond"]}]}]},{"type":"character","attributes":{},"value":["2021-01-14"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["avoiding git drama"]},{"type":"character","attributes":{},"value":["how to collaborate via git and github \n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Jenny Richmond"]}]}]},{"type":"character","attributes":{},"value":["2021-01-14"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc"]}},"value":[{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2316,7 +2316,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"avoiding git drama","description":"A new article created using the Distill format.","authors":[{"author":"Jenny Richmond","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-01-14T00:00:00.000+11:00","citationText":"Richmond, 2021"}
+{"title":"avoiding git drama","description":"how to collaborate via git and github","authors":[{"author":"Jenny Richmond","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-01-14T00:00:00.000+11:00","citationText":"Richmond, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2345,7 +2345,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <h1>avoiding git drama</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>A new article created using the Distill format.</p></p>
+<p><p>how to collaborate via git and github</p></p>
 </div>
 
 <div class="d-byline">
@@ -2355,22 +2355,51 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 </div>
 
 <div class="d-article">
-<h1 id="git-tips-for-experts">Git tips for experts</h1>
-<h3 id="interacting-with-git-in-the-terminal">Interacting with git in the Terminal</h3>
-<p>In this course, we are using github to collaborate on code and writing. Github is really good at version control, but there are some tricks that you can use to avoiding creating conflicts between the files that you and your collaborators are working on.</p>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#how-to-git">how to git</a></li>
+<li><a href="#option-a-git-for-beginners">Option A git for beginners</a>
+<ul>
+<li><a href="#using-the-git-tab">using the git tab</a>
+<ul>
+<li><a href="#step-1-git-pull">Step 1: git pull</a></li>
+<li><a href="#step-2-4-git-add---commit---push">Step 2-4: git add - commit - push</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#option-b-git-for-experts">Option B git for experts</a>
+<ul>
+<li><a href="#using-the-terminal">using the terminal</a>
+<ul>
+<li><a href="#step-1-git-pull-1">Step 1: git pull</a></li>
+<li><a href="#step-2-git-add">Step 2: git add</a></li>
+<li><a href="#step-3-git-commit">Step 3: git commit</a></li>
+<li><a href="#step-4-git-push">Step 4: git push</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#need-help">Need help?</a></li>
+</ul>
+</nav>
+</div>
+<h1 id="how-to-git">how to git</h1>
+<p>In this course, we are using git and github to collaborate on code and writing. Github is really good at version control and allows different people to work on the same project at the same time, but it is not like google docs where you and your collaborators are making changes on a document in real time. Because everyone will be working independently and every so often “pushing” your changes to github, there is the potential for your changes to conflict. To avoid this happening, follow the golden rule of git:</p>
+<blockquote>
+<p>Always “pull” before you “push”</p>
+</blockquote>
 <p>As you are learning git, you might like to use the git tab within RStudio (Option A), but as you become more familiar with the process you might find it faster to type commands in the terminal (Option B).</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/options.png" width="744" /></p>
 </div>
-<h1 id="option-a-using-the-git-tab">Option A using the git tab</h1>
-<h2 id="git-pull">1. git pull</h2>
+<h1 id="option-a-git-for-beginners">Option A git for beginners</h1>
+<h2 id="using-the-git-tab">using the git tab</h2>
+<h3 id="step-1-git-pull">Step 1: git pull</h3>
 <p>When you are working on a repo with someone else, it is possible that your collaborator has pushed their changes to your repo since the last time you were working. Whenever you sit down to work on your project/site, it is good practice to “pull” before you “push”.</p>
-<h3 id="option-1-via-the-git-tab">option 1 via the git tab</h3>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/gitpull.png" width="1190" /></p>
 </div>
 <p>It is a good idea to use git pull before you think about pushing new content, because by getting the latest version of the repo from git onto your local machine you are much less likely to create merge conflicts (aka clashes with your collaborators).</p>
-<h2 id="git-add---commit---push">git add - commit - push</h2>
+<h3 id="step-2-4-git-add---commit---push">Step 2-4: git add - commit - push</h3>
 <p>When you have made some changes and want to push those changes to git, just knit your documents and then tell github that you have some content to add.</p>
 <p>First press the commit button.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2379,31 +2408,57 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <p>In the popup window…</p>
 <ol type="1">
 <li>add: check the box next to each of the files you are ready to commit. This “stages” the files ready for the commit.</li>
-<li>commit: on the right side of a the popup window, write a message explaining to your collaborators (or your future self) what changes have been made in this commit and click the commit button. Close out the popup box.</li>
+<li>commit: on the right side of a the popup window, write a message explaining to your collaborators (or your future self) what changes have been made in this commit 3. click the commit button. Close out the popup box.</li>
 <li>push: press the “up” button to push your changes to github</li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="img/add%20commit%20push.png" width="715" /></p>
 </div>
-<h1 id="option-b-using-the-terminal">Option B using the terminal</h1>
-<p>You can complete the steps above by typing commands into the terminal.</p>
-<p>First, pull the most up-to-date version of your project from git</p>
+<p>Check your github repo to make sure that your changes have appeared.</p>
+<h1 id="option-b-git-for-experts">Option B git for experts</h1>
+<h2 id="using-the-terminal">using the terminal</h2>
+<p>Once you get a bit more familiar with the process of pulling, committing and pushing your changes to github, you might like to speed up the process by typing commands into the terminal.</p>
+<p>First, does your RStudio have a Terminal tab? If not, choose Tools-Terminal-New Terminal to get one.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/terminal.png" width="710" /></p>
+</div>
+<h3 id="step-1-git-pull-1">Step 1: git pull</h3>
+<p>You want to pull the most up-to-date version of your project from git. Type…</p>
 <blockquote>
 <p>git pull</p>
 </blockquote>
-<p>Then let github know which files you want to add.</p>
+<p>… into the terminal. If you already have the most recent version, it will let you know that you are Already up to date.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/pull.png" width="434" /></p>
+</div>
+<h3 id="step-2-git-add">Step 2: git add</h3>
+<p>Then let github know which files you want to add. Type…</p>
 <blockquote>
 <p>git add .</p>
 </blockquote>
-<p>This says hey git, I want to add some stuff, in fact all things that have changed (aka .) This is the same as “staging” all the files that have changed.</p>
-<p>Commit your files with a message that lets your collaborators (or your future self) know what has changed</p>
+<p>… into the terminal. This one won’t give you any feedback. This says hey git, I want to add some stuff, in fact all things that have changed (aka .) This is the same as “staging” all the files that have changed.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/add.png" width="439" /></p>
+</div>
+<h3 id="step-3-git-commit">Step 3: git commit</h3>
+<p>Commit your files with a message that lets your collaborators (or your future self) know what has changed. Type…</p>
 <blockquote>
 <p>git commit -m “a message that makes sense”</p>
 </blockquote>
-<p>And finally, push your changes to github</p>
+<p>… into the terminal. This one will give you a list of files that have been changed as feedback.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/commit.png" width="446" /></p>
+</div>
+<h3 id="step-4-git-push">Step 4: git push</h3>
+<p>And finally, push your changes to github. Type…</p>
 <blockquote>
 <p>git push</p>
 </blockquote>
+<p>… into the terminal. Wait for it to chug and complete the push.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="img/push.png" width="454" /></p>
+</div>
+<p>Check your github repo to make sure that your changes have appeared.</p>
 <h1 id="need-help">Need help?</h1>
 <p>Jenny Bryan who works for R-Studio has written a great site called <a href="www.happygitwithr.com">happygitwithr</a> which has lots of good tips and tricks if you are looking for more.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
