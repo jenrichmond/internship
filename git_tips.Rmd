@@ -20,20 +20,22 @@ In this course, we are using github to collaborate on code and writing projects.
 
 When you are working on a repo with someone else, it is possible that your collaborator has pushed their changes to your repo since the last time your were working.  Whenever you sit down to work on your project/site, it is good practice to "pull" before you "push".
 
-### in the terminal
+### option 1 in the terminal
 
 > git pull
 
-### via the git tab
+### option 2 via the git tab
 
-This pulls the latest version of the repo from git onto your local machine and makes it much less likely that you will create merge conflicts (aka clashes with your collaborators)
+git pull pulls the latest version of the repo from git onto your local machine and makes it much less likely that you will create merge conflicts (aka clashes with your collaborators)
 
 When you have made some changes and want to push those changes to git, just knit your documents and then use these 3 commands in the TERMINAL to push the changes to git. 
 
-
+### option 1 in the terminal
 > git add . 
 
-This says hey git, I want to add some stuff, in fact all things that have changed (aka .)
+This says hey git, I want to add some stuff, in fact all things that have changed (aka .) This is the same as "staging" all the files that have changed. 
+
+### option 2 in the git tab
 
 > git commit -m "a message that makes sense"
 
